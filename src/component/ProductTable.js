@@ -13,12 +13,12 @@ class ProductTable extends React.Component {
         let list = [];
         products.filter((x) => {
             return x.name.includes(filterText) && (!inStockOnly || x.stocked);
-        }).forEach((x) => {
+        }).forEach((x, index) => {
             if (x.category !== lastCategory) {
                 lastCategory = x.category;
-                list.push(<ProductCategoryRow category={x.category}/>);
+                list.push(<ProductCategoryRow key={'category' + index} category={x.category}/>);
             }
-            list.push(<ProductRow product={x}/>);
+            list.push(<ProductRow key={'product' + index} product={x}/>);
         });
 
 
