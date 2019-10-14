@@ -24,32 +24,3 @@
 .container {
   margin: 15px
 }
-
-.searchBar {
-  border: 1px solid blue;
-  margin: 2px;
-  padding: 2px;
-}
-
-.filterableProductTbale {
-  border: 1px solid yellow;
-  padding: 2px;
-}
-
-.productTable {
-  border: 1px solid greenyellow;
-  margin: 2px;
-  padding: 2px;
-}
-
-.productGategory {
-  border: 1px solid turquoise;
-  margin: 2px;
-  padding: 2px;
-}
-
-.productRow {
-  border: 1px solid red;
-  margin: 2px;
-  padding: 2px;
-}
